@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="schoolSelection_array">
+        <item>San Diego State University</item>
+        <item>University of San Diego</item>
+        <item>Grossmont College</item>
+    </string-array>
+</resources>

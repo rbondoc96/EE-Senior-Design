@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstWindow">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="279dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/parkingbuddylogo_transparent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:text="Campus:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:text="Campus:" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="260dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="344dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/options_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:id="@+id/sdsu_RelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/sdsu_progressBar1"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:clickable="false"
+                    android:onClick="sdsu_structure_bar1Press"
+                    android:paddingBottom="4dp"
+                    android:progressDrawable="@drawable/colorprogress" />
+
+                <TextView
+                    android:id="@+id/sdsu_progressBar1_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="Parking Structure 1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/PS1_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/sdsu_progressBar1_text"
+                    android:layout_alignTop="@+id/sdsu_progressBar1_text"
+                    android:layout_alignEnd="@+id/sdsu_progressBar1_text"
+                    android:layout_marginStart="288dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="17dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/sdsu_progressBar2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:clickable="false"
+                    android:onClick="sdsu_structure_bar2Press"
+                    android:paddingBottom="4dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/greycolorprogress" />
+
+                <TextView
+                    android:id="@+id/sdsu_progressBar2_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="Parking Structure 3"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/PS3_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/sdsu_progressBar2_text"
+                    android:layout_alignEnd="@+id/sdsu_progressBar2_text"
+                    android:layout_alignBottom="@+id/sdsu_progressBar2_text"
+                    android:layout_marginStart="287dp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginBottom="-10dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/sdsu_progressBar3"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:clickable="false"
+                    android:onClick="sdsu_structure_bar3Press"
+                    android:paddingBottom="4dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/greycolorprogress" />
+
+                <TextView
+                    android:id="@+id/sdsu_progressBar3_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="Parking Structure 4"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/PS4_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/sdsu_progressBar3_text"
+                    android:layout_alignEnd="@+id/sdsu_progressBar3_text"
+                    android:layout_alignBottom="@+id/sdsu_progressBar3_text"
+                    android:layout_marginStart="287dp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginBottom="-10dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/sdsu_progressBar4"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:clickable="false"
+                    android:onClick="sdsu_structure_bar4Press"
+                    android:paddingBottom="4dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/greycolorprogress" />
+
+                <TextView
+                    android:id="@+id/sdsu_progressBar4_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="Parking Structure 6"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/PS6_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/sdsu_progressBar4_text"
+                    android:layout_alignEnd="@+id/sdsu_progressBar4_text"
+                    android:layout_alignBottom="@+id/sdsu_progressBar4_text"
+                    android:layout_marginStart="287dp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginBottom="-10dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/sdsu_progressBar5"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:clickable="false"
+                    android:onClick="sdsu_structure_bar5Press"
+                    android:paddingBottom="4dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/greycolorprogress" />
+
+                <TextView
+                    android:id="@+id/sdsu_progressBar5_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="Parking Structure 7"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/PS7_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/sdsu_progressBar5_text"
+                    android:layout_alignEnd="@+id/sdsu_progressBar5_text"
+                    android:layout_alignBottom="@+id/sdsu_progressBar5_text"
+                    android:layout_marginStart="287dp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginBottom="-10dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/sdsu_progressBar6"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:clickable="false"
+                    android:onClick="sdsu_structure_bar6Press"
+                    android:paddingBottom="4dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/greycolorprogress" />
+
+                <TextView
+                    android:id="@+id/sdsu_progressBar6_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="Parking Structure 12"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/options_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="optionsPress"
+        android:text="@string/options"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>
