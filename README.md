@@ -1,3 +1,6 @@
+<div style="text-align: center; margin-top: 15px;">
+<img src="https://raw.githubusercontent.com/rbondoc96/EE-Senior-Design/master/media/pics/parkingbuddylogo.png" width="150px">
+</div>
 <h1 align="center">Parking Buddy</h1>
 <p align="center">An IoT solution to monitor parking congestion in the university parking structures</p>
 
@@ -14,6 +17,10 @@
 <p>Our team sought to solve one of the biggest issues plaguing students and faculty alike: parking. With thousands of students attending the campus, parking became a hassle and the time consumed negatively impacted students. 
 
 To solve this, we designed a network of cameras and Raspberry Pi processors communicating within a parking structure to monitor the density of available parking spots, and displaying it on a mobile application in real time.</p>
+
+<div style="text-align: center; margin-top: 15px;">
+<img src="https://raw.githubusercontent.com/rbondoc96/EE-Senior-Design/master/media/pics/parkingbuddylogo.png" width="150px">
+</div>
 
 <h3>Contributors</h3><a name="contrib"></a>
 <hr>
