@@ -1,4 +1,4 @@
-<div style="text-align: center; margin-top: 15px;">
+<div style="display: flex; justify-content: center; margin-top: 15px;">
 <img src="https://raw.githubusercontent.com/rbondoc96/EE-Senior-Design/master/media/pics/parkingbuddylogo.png" width="150px">
 </div>
 <h1 align="center">Parking Buddy</h1>
