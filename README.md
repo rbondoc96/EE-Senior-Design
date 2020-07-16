@@ -19,7 +19,7 @@
 To solve this, we designed a network of cameras and Raspberry Pi processors communicating within a parking structure to monitor the density of available parking spots, and displaying it on a mobile application in real time.</p>
 
 <div style="text-align: center; margin-top: 15px;">
-<img src="https://raw.githubusercontent.com/rbondoc96/EE-Senior-Design/master/media/pics/parkingbuddylogo.png" width="150px">
+<img src="https://raw.githubusercontent.com/rbondoc96/EE-Senior-Design/master/media/pics/Network%20Flow%20Diagram.jpg" max-width="720px">
 </div>
 
 <h3>Contributors</h3><a name="contrib"></a>
